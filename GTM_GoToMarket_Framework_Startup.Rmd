@@ -1,6 +1,6 @@
 ---
 title: "Go-To-Market (GTM) Framework for a Startup"
-author: "Startup GTM Strategist"
+author: "Startup GTM Strategist- Satya Panda"
 date: "`r Sys.Date()`"
 output: html_document
 ---
