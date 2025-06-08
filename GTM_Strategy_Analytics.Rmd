@@ -1,0 +1,87 @@
+---
+title: "GTM Strategy Analytics Report"
+author: "Satya Panda"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+library(readr)
+library(dplyr)
+library(ggplot2)
+```
+
+# Executive Summary
+This report delivers a segment-wise analytics view of your Go-To-Market (GTM) Strategy Framework. By breaking down the GTM pillars into actionable segments, you gain clarity on focus areas, gaps, and opportunities for each strategic component.
+
+# Introduction
+This report analyzes the GTM Strategy Framework by segmenting tasks under each GTM pillar, providing targeted insights for data-driven decision-making.
+
+# Data Import
+
+```{r}
+gtm_data <- read_csv("GTM_Strategy_Framework.csv")
+gtm_data
+```
+
+# Data Summary & Insights
+
+```{r}
+# Show structure and a sample of the data for context
+glimpse(gtm_data)
+kable(head(gtm_data, 5), caption = "Sample of GTM Strategy Tasks")
+```
+
+- **Observation:** The framework covers all major GTM pillars, ensuring a balanced approach across market analysis, value delivery, competition, sales, marketing, customer success, and feedback.
+
+# Data Preparation: Segmenting GTM Tasks
+
+```{r}
+# Convert data to long format for segment-wise analysis
+gtm_long <- gtm_data %>%
+  mutate(Segment = row_number()) %>%
+  tidyr::pivot_longer(-Segment, names_to = "Component", values_to = "Task") %>%
+  filter(Task != "")
+
+# Show a sample of the segmented data
+kable(head(gtm_long, 10), caption = "Segmented GTM Tasks")
+```
+
+# Segment-wise Task Distribution
+
+```{r}
+# Count tasks per segment and component
+segment_summary <- gtm_long %>%
+  group_by(Segment, Component) %>%
+  summarise(Task_Count = n(), .groups = 'drop')
+
+# Visualize segment-wise distribution
+library(ggplot2)
+ggplot(segment_summary, aes(x = Component, y = Task_Count, fill = as.factor(Segment))) +
+  geom_bar(stat = "identity", position = position_dodge()) +
+  theme_minimal() +
+  labs(title = "Segment-wise Distribution of GTM Tasks", x = "GTM Component", y = "Number of Tasks", fill = "Segment")
+```
+
+- **Insight:** This visualization shows how each GTM segment (row) contributes to the overall framework, highlighting strengths and gaps by component.
+
+# Deep Dive: Segment Profiles
+
+```{r}
+# Profile each segment by listing its tasks
+gtm_profiles <- gtm_long %>%
+  group_by(Segment) %>%
+  summarise(Tasks = paste0(Component, ": ", Task, collapse = "; "))
+kable(gtm_profiles, caption = "GTM Segment Profiles")
+```
+
+- **Interpretation:** Review each segment’s profile to ensure all critical GTM activities are covered and aligned with your strategy.
+
+# Recommendations
+- **Segment Focus:** Address any segments with fewer tasks to ensure comprehensive coverage.
+- **Strategic Alignment:** Use segment profiles to align team responsibilities and track progress.
+- **Continuous Review:** Regularly update segment tasks as your GTM strategy evolves.
+
+# Conclusion
+This segment-wise analytics report provides a granular view of your GTM framework, enabling targeted improvements and strategic clarity for each pillar and segment.
