@@ -4,7 +4,8 @@
 This project provides a comprehensive Go-To-Market (GTM) framework tailored for startups. It includes actionable execution steps, analytics, and templates to help you plan, execute, and monitor your GTM strategy effectively.
 
 ## Framework Design
-![image](https://github.com/user-attachments/assets/ac728de3-f468-4ffc-a7c0-1d6bac96b952)
+
+[GOTOMARKET_STRATEGY.pdf](https://github.com/user-attachments/files/20646810/GOTOMARKET_STRATEGY.pdf)
 
 
 
