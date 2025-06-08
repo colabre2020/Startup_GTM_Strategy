@@ -3,6 +3,10 @@
 ## Overview
 This project provides a comprehensive Go-To-Market (GTM) framework tailored for startups. It includes actionable execution steps, analytics, and templates to help you plan, execute, and monitor your GTM strategy effectively.
 
+## Framework Design
+![image](https://github.com/user-attachments/assets/33b618b0-d72a-45d7-ad60-9140aad1ee13)
+
+
 ## Project Structure
 - **GTM_GoToMarket_Framework_Startup.docx**: A detailed Word document outlining the GTM framework and step-by-step execution guidance for each pillar.
 - **GTM_GoToMarket_Framework_Startup.Rmd**: An R Markdown file with the same GTM framework, suitable for generating professional reports in HTML or PDF.
