@@ -42,5 +42,6 @@ This project provides a comprehensive Go-To-Market (GTM) framework tailored for 
 - Update the CSV as your GTM plan evolves.
 
 ---
+## Reference - Philip Kotler
 
 **Pro Tip:** Regularly revisit and update your GTM strategy as your startup grows and market conditions change.
