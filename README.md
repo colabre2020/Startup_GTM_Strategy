@@ -95,7 +95,7 @@ Legend: ✅ = On Track, ⚠️ = Needs Attention
 | Pain Points       | e.g., Manual processes, slow onboarding    |
 | Budget            | e.g., $10,000 - $50,000 annually           |
 | Buying Triggers   | e.g., New funding, regulatory changes      |
-| Curre
+
 
 ## Getting Started
 - Open the DOCX or RMD files to review the framework.
