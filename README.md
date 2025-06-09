@@ -36,6 +36,67 @@ This project provides a comprehensive Go-To-Market (GTM) framework tailored for 
 - Sales funnel diagram
 - KPI dashboard example
 
+nt Solutions | e.g., Competitor A, in-house tools         |
+| Success Metrics   | e.g., Time to value, cost savings          |
+
+---
+
+# SWOT Analysis Template
+
+| Strengths                | Weaknesses               |
+|--------------------------|--------------------------|
+| e.g., Unique technology  | e.g., Limited resources  |
+| e.g., Strong team        | e.g., Low brand awareness|
+
+| Opportunities            | Threats                  |
+|--------------------------|--------------------------|
+| e.g., Market growth      | e.g., New competitors    |
+| e.g., Regulatory changes | e.g., Economic downturn  |
+
+---
+
+# Sales Funnel
+
+1. Awareness
+   - Marketing campaigns, PR, content
+2. Interest
+   - Website visits, downloads, webinar signups
+3. Consideration
+   - Product demos, case studies, sales calls
+4. Decision
+   - Proposal, negotiation, trial
+5. Purchase
+   - Closed deal, onboarding
+6. Retention & Advocacy
+   - Customer success, upsell, referrals
+
+---
+
+# KPI Dashboard Example
+
+| Metric                | Target      | Actual      | Status   |
+|-----------------------|-------------|-------------|----------|
+| Leads Generated       | 100/month   | 85          | ⚠️       |
+| Conversion Rate       | 10%         | 12%         | ✅       |
+| Customer Acquisition Cost (CAC) | $500        | $600        | ⚠️       |
+| Monthly Recurring Revenue (MRR) | $10,000     | $9,500      | ⚠️       |
+| Net Promoter Score (NPS)        | 50          | 55          | ✅       |
+| Churn Rate            | <5%         | 4%          | ✅       |
+
+Legend: ✅ = On Track, ⚠️ = Needs Attention
+# Sample Ideal Customer Profile (ICP) Template
+
+| Attribute         | Description/Example                        |
+|-------------------|--------------------------------------------|
+| Industry          | e.g., SaaS, Healthcare, Retail             |
+| Company Size      | e.g., 11-50 employees                      |
+| Geography         | e.g., North America, Europe                |
+| Decision Makers   | e.g., CTO, Head of Marketing               |
+| Pain Points       | e.g., Manual processes, slow onboarding    |
+| Budget            | e.g., $10,000 - $50,000 annually           |
+| Buying Triggers   | e.g., New funding, regulatory changes      |
+| Curre
+
 ## Getting Started
 - Open the DOCX or RMD files to review the framework.
 - Use RStudio to knit the RMD files for analytics and reporting.
